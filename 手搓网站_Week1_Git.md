@@ -61,11 +61,11 @@ git diff <first-branch> <second-branch> # 两个分支的差异
 git commit -m <message>#After git add
 git log	#查看历史提交记录
 
-#回退版本，会删除当前的版本。比如version1 -> version2  在version2下回退，那么version2会消失
+#回退，会删除当前的版本。比如version1 -> version2  在version2下回退，那么version2会消失
 git reset HEAD^	# 回退到上一个版本，修改内容进工作区和暂存区，当前版本会消失
 git reset --mixed <version>	#回退，修改内容进工作区
 git reset --soft <version>	#回退，修改内容进暂存区
-git reset --hard <version>	#彻底回退，修改内容清除
+git reset --hard <version>	#修改内容清除，恢复该分支初始态
 #不知道版本号怎么办？git log！
 
 git reset HEAD <filename>	#撤销add操作
